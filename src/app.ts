@@ -7,7 +7,7 @@
 class Invoice {
     client: string;
     details: string;
-    amount: number;
+    private amount: number;
 
     constructor(client: string, details: string, amount: number) {
         this.client = client;
@@ -19,7 +19,7 @@ class Invoice {
     }
 }
 const invOne = new Invoice( 'mario', 'work on website', 250);
-
+console.log(invOne.amount);
 
 type TInvoice = {
     client: string;

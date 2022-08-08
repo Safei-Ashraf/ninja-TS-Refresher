@@ -14,6 +14,7 @@ class Invoice {
     }
 }
 const invOne = new Invoice('mario', 'work on website', 250);
+console.log(invOne.amount);
 const formatInvoice = ({ client, details, amount }) => {
     return `${client} owes  $${details} for  ${amount}`;
 };
