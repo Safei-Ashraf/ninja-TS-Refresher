@@ -1,7 +1,5 @@
-var character = 'Mario';
-var age = 30;
-var isBlackBelt = false;
-var circleDiameter = function (diameter) {
-    return diameter * Math.PI;
+var yoshi = {
+    name: "yoshi",
+    belt: 'red',
+    skills: ["green", "blue"]
 };
-console.log(circleDiameter(12));

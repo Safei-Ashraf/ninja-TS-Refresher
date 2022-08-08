@@ -1,10 +1,12 @@
-let character = 'Mario';
-let age = 30;
-let isBlackBelt = false;
-
-
-const circleDiameter = (diameter: number): number =>{
-    return diameter * Math.PI;
+type Ninja = {
+    name: string;
+    belt: string;
+    age?: number;
+    skills : string[];
 }
 
-console.log(circleDiameter(12))
+let yoshi: Ninja = {
+    name: "yoshi",
+    belt: 'red',
+    skills: ["green","blue"]
+}
