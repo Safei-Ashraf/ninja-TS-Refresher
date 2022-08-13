@@ -42,10 +42,10 @@
 //1-
 // Edit The Interface To Fix The Problems
 interface Member {
-    id: number;
+    id: number | string;
     username: string;
-    country: string;
-    readonly state: boolean;
+    country?: string;
+     state: boolean;
     getName: () => string;
   }
   
