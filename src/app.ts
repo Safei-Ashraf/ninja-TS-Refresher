@@ -120,7 +120,16 @@
 // p-4
 
 // Create Class Here
+class Player{
+    details: () => string;
 
+    constructor(name: string, type: string, level: number|string, vip?: boolean){
+        this.details = ()=>{
+            return `${vip? 'VIP ' :''}${name}, Type is ${type}, Level is ${level}`;
+        }
+    }
+  
+}
 // Do Not Edit The Code Below
 let player1 = new Player("Osama", "Mage", 90, true);
 let player2 = new Player("Shady", "Archer", "85", false);
