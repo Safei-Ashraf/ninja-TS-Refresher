@@ -181,6 +181,15 @@ interface Play {
     logIn(): void;
     logOut(msg: string): void;
   }
+  class Player implements Play{
+    constructor(public id: number, public title: string, public level : number | string){}
+    logIn(): void {
+        console.log('logged in')
+    }
+    logOut(msg: string): void {
+        console.log('logged out' + msg)
+    }
+  }
   
   // Create Your Class Here
   
