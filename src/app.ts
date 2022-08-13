@@ -255,9 +255,11 @@
 // console.log(gameTwo.getDiscount()); // "Discount"
 // console.log(gameTwo.getLocation()); // "Location"
 
-//p-2
+//p-2 (using generics)
 // Write Function Code Here
-
+    const showTypes = <T = string, S = {}, B = {}>( val1? : T, val2?: S, val3?:B): string => {
+       return `${val1 && val1} - ${val2 && val2} - ${val3 && val3}`;
+    }
 // Do Not Edit Here
 console.log(showTypes()); // Nothing - Nothing - Nothing
 console.log(showTypes<string>("String")); // String - Nothing - Nothing
