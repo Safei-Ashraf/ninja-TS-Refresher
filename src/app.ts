@@ -157,10 +157,18 @@
 //p-6 code"
 class Show {
     constructor (private _title: string) {}
+
+     getTitle(){
+        return this._title;
+    }
+    setTitle (st: string){
+        this._title = st;
+    }
   }
+
   
   let tester = new Show("Elzero");
   
-  console.log(tester.title); // Property 'title' does not exist on type 'Show'
-  tester.title = "Osama"; // Property 'title' does not exist on type 'Show'
-  console.log(tester.title); // Property 'title' does not exist on type 'Show'
+  console.log(tester.getTitle()); // Property 'title' does not exist on type 'Show'
+  tester.setTitle("Ossamaaaa")// Property 'title' does not exist on type 'Show'
+  console.log(tester.getTitle()); // Property 'title' does not exist on type 'Show'
