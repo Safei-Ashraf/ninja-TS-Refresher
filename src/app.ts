@@ -215,11 +215,25 @@ abstract class Game {
 // Start Edit And Fix
 class RPG extends Game {
   constructor(title: string, public price: numandstring, public rate: number) {
+    super(title, price);
+  }
+  getDiscount(){
+    return `Discount`;
+  }
+  getLocation(): string {
+      return 'Location';
   }
 }
 
 class Action extends Game {
-  constructor(title: string, public price: numandstring, public rate: number) {
+  constructor(title: string, public price: numandstring, public rate: number, public company?: string) {
+    super(title, price)
+  }
+  getDiscount(){
+    return `Discount`;
+  }
+  getLocation(): string {
+      return 'Location';
   }
 }
 // End Edit And Fix
