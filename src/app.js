@@ -1,11 +1,10 @@
-"use strict";
 // // //object type annotation
 // Do Not Edit The Code Below
-let user = {
+var user = {
     id: 100,
     username: "Elzero",
     state: true,
-    getName() {
+    getName: function () {
         return this.username;
     }
 };

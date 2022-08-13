@@ -41,40 +41,40 @@
 //Week 3 Problems:
 //1-
 // Edit The Interface To Fix The Problems
-interface Member {
-    id: number | string;
-    username: string;
-    country?: string;
-     state: boolean;
-    getName: () => string;
-  }
+// interface Member {
+//     id: number | string;
+//     username: string;
+//     country?: string;
+//      state: boolean;
+//     getName: () => string;
+//   }
   
-  // Do Not Edit The Code Below
-  let user: Member = { // Property 'country' is missing in type
-    id: 100,
-    username: "Elzero",
-    state: true,
-    getName() { // 'getName' does not exist in type 'Member'
-      return this.username;
-    }
-  }
+//   // Do Not Edit The Code Below
+//   let user: Member = { // Property 'country' is missing in type
+//     id: 100,
+//     username: "Elzero",
+//     state: true,
+//     getName() { // 'getName' does not exist in type 'Member'
+//       return this.username;
+//     }
+//   }
   
-  user.id = 200;
-  user.id = "200"; // Type 'string' is not assignable to type 'number'
-  user.state = false; // Cannot assign to 'state' because it is a read-only property
+//   user.id = 200;
+//   user.id = "200"; // Type 'string' is not assignable to type 'number'
+//   user.state = false; // Cannot assign to 'state' because it is a read-only property
   
   //p-2
   // Create Interface Here
 
 // interface Client{
-//     id: number,
-//     username: string,
-//     active: boolean,
-//     discount: number,
-//     getPrice: (price: number) => number,
+//     id: number;
+//     username: string;
+//     active: boolean;
+//     discount: number;
+//     getPrice: (num: number) => number;
 // }
 // // Do Not Edit The Code Below
-// let client: Client = {
+// let client = {
 //     id: 100,
 //     username: "Elzero",
 //     active: true,
@@ -88,4 +88,3 @@ interface Member {
 //   console.log(`Client Name Is ${client.username}`);
 //   console.log(`Client Has Dicount ${client.discount}`);
 //   console.log(`Client Product After Discount Is ${client.getPrice(200)}`);
-// console.log('hey')
